@@ -2,17 +2,27 @@
 
 int main()
 {
-	char mapa[10][10];
+	char mapa[10][10] = { {' - ',' - ',' - ',' - ',' - ',' - ',' - ',' - ',' - ',' - '},
+						 {' - ',' - ',' - ',' - ',' - ',' - ',' - ',' - ',' - ',' - '},
+						 {' - ',' - ',' - ',' - ',' - ',' - ',' - ',' - ',' - ',' - '},
+						 {' - ',' - ',' - ',' - ',' - ',' - ',' - ',' - ',' - ',' - '},
+						 {' - ',' - ',' - ',' - ',' - ',' - ',' - ',' - ',' - ',' - '},
+						 {' - ',' - ',' - ',' - ',' - ',' - ',' - ',' - ',' - ',' - '},
+						 {' - ',' - ',' - ',' - ',' - ',' - ',' - ',' - ',' - ',' - '},
+						 {' - ',' - ',' - ',' - ',' - ',' - ',' - ',' - ',' - ',' - '},
+						 {' - ',' - ',' - ',' - ',' - ',' - ',' - ',' - ',' - ',' - '},
+						 {' - ',' - ',' - ',' - ',' - ',' - ',' - ',' - ',' - ',' - '} };
 	char pj = 'x';
 	char palabra;
 	int vidas = 5;
+	int posicion;
 
-
+	
 	for (int i = 0; i < 10; i++) {
 		for (int j = 0; j < 10; j++) {
-			printf("")//Mostrar mapa
-				printf("Que acción quieres realizar? \n 1.Moverse Arriba 2.Moverse Abajo 3.Moverse Izquierda 4.Moverse Derecha");
-
+			printf("%c ", mapa[i][j]);//Mostrar mapa
+			printf("Que accion quieres realizar? \n 1.Moverse Arriba \n 2.Moverse Abajo \n 3.Moverse Izquierda \n 4.Moverse Derecha");
+			scanf_s("%d", &posicion);
 		}
 	}
 }
